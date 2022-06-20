@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Thêm sản phẩm</h1>
+  <form (ngSubmit)="onClick()" #formAdd="ngForm">
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input type="text" class="form-control" [(ngModel)]="product.name" name="name">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Img</label>
+      <input type="text" class="form-control" [(ngModel)]="product.img" name="img">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Price</label>
+      <input type="number" class="form-control" [(ngModel)]="product.price" name="price">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Description</label>
+      <input type="text" class="form-control" [(ngModel)]="product.description" name="description">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
